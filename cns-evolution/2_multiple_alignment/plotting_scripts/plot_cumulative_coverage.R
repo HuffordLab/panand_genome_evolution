@@ -1,8 +1,7 @@
 library(ggplot2)
 
-setwd("C:\\Users\\Armin\\ws\\panand\\analysis\\panand_cns_analysis\\2_multiple_alignment\\plotting_scripts")
 
-cov_stats <- read.delim("..\\data\\panand_all_lt2.subfilt_10052023_clean_coverage_stats.csv",sep=',',header=TRUE)
+cov_stats <- read.delim("../data/panand_all_lt2.subfilt_10052023_clean_coverage_stats.csv",sep=',',header=TRUE)
 cov_stats <- cov_stats[cov_stats$species!=1,]
 cov_stats$species <- cov_stats$species -1 
 
@@ -19,5 +18,5 @@ ggplot(cov_stats_cum ,aes(species,csum/1000000)) +
   xlab("Minimum number of species")+
   theme_bw()+
   theme(text = element_text(size = 18))
-ggsave("C:\\Users\\Armin\\ws\\panand\\analysis\\panand_cns_analysis\\2_multiple_alignment\\figures\\Fig_cumulative_aligned_mbp.pdf")
+ggsave("../figures/Fig_cumulative_aligned_mbp.pdf")
 
