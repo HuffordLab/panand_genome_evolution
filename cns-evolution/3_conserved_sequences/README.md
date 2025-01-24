@@ -22,7 +22,7 @@ Raw conserved regions were then filtered to generate a set of high-quality conse
 * Remaining regions were retained if they had a minimum length of 5bp
 * Elements with a blastx match to any protein in the Uniprot TREMBL database with an e-value threshold of 0.01 were removed
 
-The remaining 1,664,343 elements were considered high-quality CNS and used for further analyses. 
+The remaining 1,664,343 elements were considered high-quality CNS and used for further analyses. This set of CNS detected with PhastCons in PHAST v1.5 using a Cactus v2.1.1 multiple alignment of 33 Andropogoneae species to the Z. mays B73v5 reference genome are made available in the BED file `data/panand_cns.bed.gz`.
 
 ## Calculating enriched features in conserved regions
 
